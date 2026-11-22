@@ -1,0 +1,105 @@
+:root {
+  --color-primary: #6500a8;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-navbar {
+  background-color: var(--color-primary);
+}
+
+.portfolio-navbar .navbar-brand,
+.portfolio-navbar .nav-link {
+  color: #ffffff;
+}
+
+.portfolio-navbar .nav-link:hover {
+  color: #e9d5ff;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.about-title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.about-avatar {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section-title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.skill-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 12%);
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.skill-icon {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.project-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 10%);
+}
+
+.project-title {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.recommendation-card {
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+.recommendation-card .bi-quote {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.scroll-top-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-radius: 50%;
+
+  font-size: 1.25rem;
+  z-index: 1000;
+}
+
+.scroll-top-button:hover {
+  background-color: #4c0080;
+  border-color: #4c0080;
+}
