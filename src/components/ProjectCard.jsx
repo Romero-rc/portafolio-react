@@ -1,23 +1,38 @@
 
 import { Card, Badge } from 'react-bootstrap';
 
-function ProjectCard({ nombre, descripcion, tecnologias }) {
+function ProjectCard({
+  nombre,
+  descripcion,
+  tecnologias,
+  icono
+}) {
   return (
     <Card className="project-card h-100">
       <Card.Body>
+        <div className="project-icon">
+          <i
+            className={`bi ${icono}`}
+            aria-hidden="true"
+          />
+        </div>
+
         <Card.Title className="project-title">
           {nombre}
         </Card.Title>
 
-        <Card.Text>{descripcion}</Card.Text>
+        <Card.Text className="project-description">
+          {descripcion}
+        </Card.Text>
 
-        <div className="d-flex flex-wrap gap-2">
+        <div
+          className="project-technologies"
+          aria-label="Tecnologías utilizadas"
+        >
           {tecnologias.map((tecnologia) => (
             <Badge
               key={tecnologia}
-              bg="light"
-              text="dark"
-              className="border"
+              className="technology-badge"
             >
               {tecnologia}
             </Badge>

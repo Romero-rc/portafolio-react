@@ -5,15 +5,31 @@ import { skills } from '../data/portfolio.js';
 
 function SkillsSection() {
   return (
-    <section id="habilidades" className="py-5">
+    <section id="habilidades" className="content-section">
       <Container>
-        <h2 className="section-title mb-4">
-          Habilidades
-        </h2>
+        <div className="section-heading">
+          <span className="section-eyebrow">
+            TECNOLOGÍAS
+          </span>
 
-        <Row className="g-4">
+          <h2 className="section-title">
+            Habilidades técnicas
+          </h2>
+
+          <p className="section-description">
+            Herramientas y tecnologías que utilizo
+            en mis actividades y proyectos de aprendizaje.
+          </p>
+        </div>
+
+        <Row className="g-3">
           {skills.map((skill) => (
-            <Col key={skill.id} xs={12} sm={6} md={4} lg={3}>
+            <Col
+              key={skill.id}
+              xs={6}
+              md={4}
+              lg={2}
+            >
               <SkillCard
                 nombre={skill.nombre}
                 experiencia={skill.experiencia}
